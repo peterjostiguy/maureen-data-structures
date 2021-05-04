@@ -48,6 +48,12 @@ public class MyLinkedListsTest {
     }
 
     @Test
+    public void getLastItemFromLinkedListWithNoHead(){
+        MyLinkedLists linkedList = new MyLinkedLists();
+        assertEquals(null, linkedList.getLast(), "getLast gets last node in linked list");
+    }
+
+    @Test
     public void getNumberByIndexFromLinkedList() {
         MyLinkedLists linkedList = new MyLinkedLists();
         linkedList.add(5);
@@ -81,6 +87,12 @@ public class MyLinkedListsTest {
         linkedList.add(7);
         assertEquals(1, linkedList.contains(3), "find index of linkedlist value object");
 
+    }
+
+    @Test
+    public void linkedListDoesNotContainObjectIfNoHead() {
+        MyLinkedLists linkedList = new MyLinkedLists();
+        assertEquals(-1, linkedList.contains(3), "find index of linkedlist value object");
     }
 
     @Test
