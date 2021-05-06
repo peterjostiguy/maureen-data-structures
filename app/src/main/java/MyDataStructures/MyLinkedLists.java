@@ -1,4 +1,4 @@
-package MyLinkedLists;
+package MyDataStructures;
 
 public class MyLinkedLists {
 
@@ -12,7 +12,7 @@ public class MyLinkedLists {
         return true;
     }
 
-    public void add(Object value){
+    protected void add(Object value){
         if (head == null){
             head = new MyNode(value);
         } else {

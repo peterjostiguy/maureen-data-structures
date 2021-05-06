@@ -1,10 +1,7 @@
-package MyLinkedLists;
+package MyDataStructures;
 
 import org.junit.Test;
-//import static org.junit.jupiter.api.Assertions.assertEquals;
-//import static org.junit.jupiter.api.Assertions.assertTrue;
-//import static org.junit.jupiter.api.Assertions.assertNotNull;
-//import static org.junit.jupiter.api.Assertions.assertThat;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -40,8 +37,8 @@ public class MyLinkedListsTest {
 
     @Test
     public void getLastItemFromLinkedList(){
-         MyLinkedLists linkedList = new MyLinkedLists();
-         linkedList.add(5);
+        MyLinkedLists linkedList = new MyLinkedLists();
+        linkedList.add(5);
          linkedList.add(3);
          linkedList.add(7);
          assertEquals(7, linkedList.getLast().value, "getLast gets last node in linked list");

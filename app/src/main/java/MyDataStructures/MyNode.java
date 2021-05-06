@@ -1,4 +1,4 @@
-package MyLinkedLists;
+package MyDataStructures;
 
 public class MyNode {
     Object value;
